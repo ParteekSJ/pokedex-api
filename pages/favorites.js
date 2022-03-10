@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Pokedex from "../components/Pokedex";
 
-export default function favorites() {
-  const dispatch = useDispatch();
+export default function Favorites() {
   const { favourites } = useSelector((state) => ({
     ...state.pokemon,
   }));
